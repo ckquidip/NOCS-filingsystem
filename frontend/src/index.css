@@ -1,0 +1,139 @@
+body { 
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+.container { 
+  max-width: 500px; 
+  margin-top: 100px; 
+}
+.card { 
+  background-color: #ffffff; 
+  color: black; 
+  border-radius: 8px; 
+  padding: 30px;
+}
+.btn-primary { 
+  background-color: #1abc9c;
+  border: none; 
+  border-radius: 5px; 
+}
+.btn-success { 
+  background-color: #28a745; 
+  border: none; 
+  border-radius: 5px; 
+}
+.btn-danger { 
+  background-color: #D9534F; 
+  border: none; 
+  border-radius: 5px; 
+}
+.form-control { 
+  background-color: #ffffff; 
+  color: black; 
+  border-radius: 5px; 
+  border: 1px solid #ccc;
+}
+.sidebar { 
+  background: #238af0; 
+  width: 240px; 
+  height: 100vh; 
+  position: fixed; 
+  padding: 30px 20px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  box-sizing: border-box; 
+  border-radius: 8px; 
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px; 
+}
+.sidebar .logo img {
+  max-width: 0px;
+  filter: hue-rotate(210deg) saturate(1.5); 
+}
+#loginPage .logo img {
+  max-width: 300px;
+  filter: hue-rotate(180deg) saturate(1.5); 
+}
+.new-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.sidebar h4 {
+  font-size: 20px;
+  margin-bottom: 20px;  
+  color: #fff;  
+}
+.sidebar a { 
+  color: white; 
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+.sidebar a:hover {
+  background-color: #005bb5;
+}
+.material-symbols-outlined { 
+  margin-right: 15px; 
+}
+.logout-btn {
+  position: absolute;
+  bottom: 40px; 
+  left: 20px;
+  width: calc(100% - 40px);   
+}
+.content { 
+  margin-left: 260px; 
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.content.visible {
+  opacity: 1;
+}
+.modal-header, .modal-body {
+  color: black;
+}
+
+.table tbody tr:hover {
+  background-color: #495057;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.file-actions button {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px;
+  }
+  .content {
+      margin-left: 220px;
+  }
+}
+@media (max-width: 576px) {
+  .sidebar {
+      width: 180px;
+      padding: 20px;
+  }
+  .content {
+      margin-left: 200px;
+  }
+  .logo img {
+      max-width: 100px;
+  }
+}
